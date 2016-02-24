@@ -157,7 +157,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Tethering
 PRODUCT_PROPERTY_OVERRIDES += \
-    net.tethering.noprovisioning=true
+    net.tethering.noprovisioning=true    
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \

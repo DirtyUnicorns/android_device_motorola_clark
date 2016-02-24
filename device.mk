@@ -136,7 +136,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.clark \
     libcamera \
-    libqomx_core
+    libqomx_core \
+    libmm-qcamera \
+    libmmcamera_interface \
+    libmmjpeg_interface \
+    mm-qcamera-app \
+    Snap
 
 # Display
 PRODUCT_PACKAGES += \
@@ -262,6 +267,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:system/etc/permissions/android.hardware.opengles.aep.xml \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.du.updater=clark
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
