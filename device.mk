@@ -110,17 +110,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     $(LOCAL_PATH)/nfc/libnfc-brcm-20795a20.conf:system/etc/libnfc-brcm-20795a20.conf
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.clark \
-    libcamera \
-    libqomx_core \
-    libmm-qcamera \
-    libmmcamera_interface \
-    libmmjpeg_interface \
-    mm-qcamera-app \
-    Snap
-
 # for off charging mode
 PRODUCT_PACKAGES += \
     charger_res_images
@@ -142,6 +131,12 @@ PRODUCT_PACKAGES += \
     init.qcom.class_core.sh \
     init.qcom.sh \
     ueventd.qcom.rc
+
+# Camera
+PRODUCT_PACKAGES += \
+    camera.clark \
+    libcamera \
+    libqomx_core
 
 # Display
 PRODUCT_PACKAGES += \
@@ -210,10 +205,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml
-
-# CMActions
-PRODUCT_PACKAGES += \
-    CMActions
 
 # Wifi Firmware
 PRODUCT_COPY_FILES += \
