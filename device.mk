@@ -140,8 +140,7 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     libmmcamera_interface \
     libmmjpeg_interface \
-    mm-qcamera-app \
-    Snap
+    mm-qcamera-app
 
 # Display
 PRODUCT_PACKAGES += \
