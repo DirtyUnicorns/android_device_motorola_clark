@@ -35,6 +35,7 @@ public class MotoActionsService extends IntentService implements ScreenStateNoti
 
     private final DozePulseAction mDozePulseAction;
     private final PowerManager mPowerManager;
+    private final PowerManager.WakeLock mWakeLock;
     private final ScreenReceiver mScreenReceiver;
     private final SensorHelper mSensorHelper;
 
@@ -75,6 +76,7 @@ public class MotoActionsService extends IntentService implements ScreenStateNoti
         mUpdatedStateNotifiers.add(new LiftToSilence(MotoActionsSettings, context, mSensorHelper));
 
         mPowerManager = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+        mWakeLock = mPowerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "CMActionsWakeLock");
         updateState();
     }
 
@@ -84,6 +86,9 @@ public class MotoActionsService extends IntentService implements ScreenStateNoti
 
     @Override
     public void screenTurnedOn() {
+            if (!mWakeLock.isHeld()) {
+                mWakeLock.acquire();
+            }
         for (ScreenStateNotifier screenStateNotifier : mScreenStateNotifiers) {
             screenStateNotifier.screenTurnedOn();
         }
@@ -91,6 +96,9 @@ public class MotoActionsService extends IntentService implements ScreenStateNoti
 
     @Override
     public void screenTurnedOff() {
+            if (mWakeLock.isHeld()) {
+                mWakeLock.release();
+            }
         for (ScreenStateNotifier screenStateNotifier : mScreenStateNotifiers) {
             screenStateNotifier.screenTurnedOff();
         }
