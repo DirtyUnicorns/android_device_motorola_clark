@@ -258,6 +258,11 @@ bin/msm_irqbalance
 bin/perfd
 vendor/lib/libqti-perfd-client.so
 
+# IO Prefetcher
+bin/iop
+lib/libqti-iop.so
+vendor/lib/libqti-iop-client.so
+
 # DM/Sprint
 -app/DMConfigUpdateLight/DMConfigUpdateLight.apk
 -app/HiddenMenuLight/HiddenMenuLight.apk
