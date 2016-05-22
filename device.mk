@@ -79,6 +79,10 @@ PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
 
+# CMActions
+PRODUCT_PACKAGES += \
+    MotoActions
+
 # Display
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := 560dpi
