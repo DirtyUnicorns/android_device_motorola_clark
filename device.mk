@@ -79,6 +79,9 @@ PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml
+
 # CMActions
 PRODUCT_PACKAGES += \
     MotoActions
