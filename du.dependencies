@@ -15,11 +15,6 @@
     "branch":      "m-caf"
   },
   {
-    "repository": "DirtyUnicorns/android_hardware_sony_timekeep",
-    "target_path": "hardware/sony/timekeep",
-    "branch":      "m-caf"
-  },
-  {
     "repository": "DirtyUnicorns/android_system_qcom",
     "target_path": "system/qcom",
     "branch":      "m-caf"

@@ -74,11 +74,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     thermanager
 
-# Sony timekeep
-PRODUCT_PACKAGES += \
-    timekeep \
-    TimeKeep
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml
 

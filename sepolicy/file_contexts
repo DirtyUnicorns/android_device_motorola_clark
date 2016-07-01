@@ -24,4 +24,3 @@
 
 /sys/class/leds/lcd-backlight/brightness        u:object_r:sysfs_light:s0
 /sys/power/autosleep                            u:object_r:sysfs_power:s0
-

@@ -56,14 +56,16 @@ BOARD_VENDOR := motorola-qcom
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 earlyprintk=msm_hsl_uart,0xf991e000 utags.blkdev=/dev/block/bootdevice/by-name/utags utags.backup=/dev/block/bootdevice/by-name/utagsBackup
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset BOARD_RAMDISK_OFFSET --tags_offset BOARD_KERNEL_TAGS_OFFSET
 
-TARGET_NO_RADIOIMAGE := true
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msm8992
 TARGET_BOOTLOADER_BOARD_NAME := clark
+TARGET_NO_RADIOIMAGE := true
 TARGET_NO_RPC := true
 TARGET_USES_LOGD := true
-
 TARGET_USES_64_BIT_BINDER := true
-BOARD_USES_QCOM_HARDWARE := true
+BOARD_USES_QC_TIME_SERVICES := true
+
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 # CMHW
