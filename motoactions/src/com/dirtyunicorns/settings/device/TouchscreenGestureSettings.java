@@ -16,7 +16,7 @@
 
 package com.dirtyunicorns.settings.device;
 
-import com.android.internal.util.du.ScreenType;
+import com.android.internal.util.du.DuUtils;
 
 import android.app.ActionBar;
 import android.app.AlertDialog;
@@ -91,7 +91,7 @@ public class TouchscreenGestureSettings extends PreferenceActivity {
         super.onResume();
 
         // If running on a phone, remove padding around the listview
-        if (!ScreenType.isTablet(this)) {
+        if (!DuUtils.isTablet(this)) {
             getListView().setPadding(0, 0, 0, 0);
         }
 
