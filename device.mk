@@ -81,6 +81,10 @@ PRODUCT_PACKAGES += \
     libqdutils \
     libqdMetaData
 
+# DU Updater
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.du.updater=clark
+
 # Firmware extraction script
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/releasetools/extract_firmware.sh:install/bin/extract_firmware.sh
