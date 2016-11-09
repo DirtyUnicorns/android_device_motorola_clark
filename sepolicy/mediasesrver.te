@@ -1,2 +1,4 @@
 allow mediaserver firmware_file:dir search;
 allow mediaserver socket_device:sock_file write;
+allow mediaserver cameraproxy_service:service_manager find;
+allow mediaserver cameraserver_service:service_manager add;
