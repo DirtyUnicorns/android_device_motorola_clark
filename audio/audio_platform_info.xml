@@ -27,7 +27,6 @@
 <audio_platform_info>
 	<acdb_ids>
 	<!-- Output devices -->
-		<device name="SND_DEVICE_OUT_HANDSET" acdb_id="10"/>
 		<device name="SND_DEVICE_OUT_HEADPHONES" acdb_id="9"/>
 		<device name="SND_DEVICE_OUT_LINE" acdb_id="9"/>
 		<device name="SND_DEVICE_OUT_SPEAKER" acdb_id="10"/>
@@ -40,7 +39,6 @@
 		<device name="SND_DEVICE_OUT_VOICE_SPEAKER" acdb_id="10"/>
 
 	<!-- Input devices -->
-		<device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="8"/>
 		<device name="SND_DEVICE_IN_SPEAKER_MIC" acdb_id="8"/>
 		<device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" acdb_id="8"/>
 	</acdb_ids>
