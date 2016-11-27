@@ -58,7 +58,6 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     mm-qcamera-app \
     libshim_camera \
-    Snap
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.motorola.cameraone.xml:system/etc/permissions/com.motorola.cameraone.xml
