@@ -2,26 +2,26 @@
   {
     "repository": "DirtyUnicorns/android_kernel_motorola_msm8992",
     "target_path": "kernel/motorola/msm8992",
-    "branch":      "n-caf"
+    "branch":      "n7x-caf"
   },
   {
     "repository": "DirtyUnicorns/android_vendor_motorola",
     "target_path": "vendor/motorola",
-    "branch":      "n-caf"
+    "branch":      "n7x-caf"
   },
   {
     "repository": "DirtyUnicorns/android_vendor_qcom_binaries",
     "target_path": "vendor/qcom/binaries",
-    "branch":      "n-caf"
+    "branch":      "n7x-caf"
   },
   {
     "repository": "DirtyUnicorns/android_hardware_sony_thermanager",
     "target_path": "hardware/sony/thermanager",
-    "branch":      "n-caf"
+    "branch":      "n7x-caf"
   },
   {
     "repository": "DirtyUnicorns/android_system_qcom",
     "target_path": "system/qcom",
-    "branch":      "n-caf"
+    "branch":      "n7x-caf"
   }
 ]
