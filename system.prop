@@ -70,6 +70,9 @@ persist.mot.gps.smart_battery=1
 ro.gps.agps_provider=1
 ro.pip.gated=0
 
+# Google Assistant
+ro.opa.eligible_device=true
+
 # Graphics
 debug.egl.hw=1
 debug.sf.hw=1
