@@ -10,11 +10,6 @@
     "branch":      "n7x-caf"
   },
   {
-    "repository": "DirtyUnicorns/android_vendor_qcom_binaries",
-    "target_path": "vendor/qcom/binaries",
-    "branch":      "n7x-caf"
-  },
-  {
     "repository": "DirtyUnicorns/android_hardware_sony_thermanager",
     "target_path": "hardware/sony/thermanager",
     "branch":      "n7x-caf"
